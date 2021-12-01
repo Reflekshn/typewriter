@@ -1,6 +1,6 @@
 const sentence = "hello there from lighthouse labs";
 let delay = 0;
-let interval = 50;
+let interval = 100;
 
 for (let index = 0; index < sentence.length; index++) {
   if (index !== sentence.length - 1) {
@@ -8,7 +8,7 @@ for (let index = 0; index < sentence.length; index++) {
   } else {
     setTimeout(() => process.stdout.write(sentence[index] + '\n'), delay);
   }
-  delay += 50;
+  delay += interval;
 };
 
 
